@@ -12,11 +12,12 @@ import PageEmail from './components/help/PageEmail';
 import SendMoney from './components/help/SendMoney';
 import SendingMoney from './components/help/SendingMoney';
 import HomePage from './components/help/HomePage';
+import HomeNavbar from './components/header/HomeNavbar';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Navheader />,
+    element: <HomePage />
   },
   {
     path: "/homepage",
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/pgemail",
     element: <PageEmail />
+  },
+  {
+    path: "/manageuracc",
+    element: <h3>Manage Your own account</h3>
   }
 ]);
 

@@ -1,0 +1,31 @@
+.option-container {
+  list-style-type: none;
+  margin-bottom: 0 !important;
+}
+
+.option-container li {
+  display: inline;
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+.nav-links {
+    color: #27A87E;
+    text-decoration: none;
+}
+
+.header {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.09);
+}
+
+.ulStylenone {
+    list-style-type: none;
+}
+
+.mt50 {
+    margin-top: 20px;
+}
