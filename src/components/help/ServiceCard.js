@@ -1,17 +1,25 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-import snd_money from '../../Assets/Images/snd_money.svg'
+import { Link } from 'react-router-dom';
+
+
 function ServiceCard(props) {
+  function methodCallout(){
+    console.log(props.title);
+    <li>
+      <Link className="nav-links" to="/sndmoney">Send money</Link>
+    </li>
+  }
   return (
     <>
       <Card style={{ width: '36rem' }}>
         <Card.Body>
-            <div className="row">
-                <div className="col-3">
-                    <img src={props.imgSrc} alt="..." />
+            <div onClick={methodCallout} style={{ cursor: 'pointer' }} className="row">
+                <div className="col-2">
+                    <img style={{ marginLeft: 'auto', marginRight: 'auto' }} src={props.imgSrc} alt="..." />
                 </div>
-                <div className="col-9">
-                    <Card.Title>{props.title}</Card.Title>
+                <div className="col-10">
+                    <Card.Title className="txt-bold">{props.title}</Card.Title>
                     <Card.Text>{props.desc}</Card.Text>
                 </div>
             </div>
