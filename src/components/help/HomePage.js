@@ -12,8 +12,8 @@ import HomeNavbar from '../header/HomeNavbar';
 import paidTo from '../../Assets/Images/paidTo.svg';
 import { Link } from 'react-router-dom';
 
-function cardClick(){
-    console.log("Card clicked");
+function divclicked(){
+    console.log("div clicked");
 }
 function HomePage() {
   return (
@@ -25,7 +25,7 @@ function HomePage() {
             <br />
             <div className="mx-auto" style={{ width: '50rem' }}>
                 <form className="d-flex">
-                    <img src={search} alt="..." />
+                    {/* <img src={search} alt="..." /> */}
                     <input id="search" name="search" style={{ width: '50rem' }} className="form-control me-2" type="search" placeholder="Search for Articles" aria-label="Search"/>
                     {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
                 </form>
@@ -36,71 +36,52 @@ function HomePage() {
         <div>
             <h5 className="txt-bold">Need help with recent Transaction?</h5>
             <div style={{ margin: '50px 0' }}></div>
-            {/* <Table striped bordered hover>
-                <thead>
-                    <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>5 Apr, 2022</td>
-                        <td>London Business School (Fees)</td>
-                        <td>@£14000</td>
-                    </tr>
-                    <tr>
-                        <td>5 Apr, 2022</td>
-                        <td>London Business School (Fees)</td>
-                        <td>@£14000</td>
-                    </tr>
-                    <tr>
-                        <td>5 Apr, 2022</td>
-                        <td>London Business School (Fees)</td>
-                        <td>@£14000</td>
-                    </tr>
-                </tbody>
-            </Table> */}
-            <div className="row mb-2">
-                <div className="col-2">
-                    <p>5 April, 22</p>
+            
+            <Link style={{ color: 'black' }} className="nav-links" to="/pgtnx">
+                <div onClick={divclicked} className="row py-2 hov ">
+                    <div className="col-2">
+                        <p>5 April, 22</p>
+                    </div>
+                    <div className="col-9 d-flex flex-row">
+                        <img style={{ height: '40px', marginRight: '15px' }} src={paidTo} alt="twitter-ico" />
+                        <p>Paid to <br />London Business School</p>
+                    </div>
+                    <div className="col-1">
+                        <p style={{ marginBottom: '0px' }}>&#x20B9;1410500</p>
+                        <p className="txt-bold">&#x20A4;14000</p>
+                    </div>
                 </div>
-                <div className="col-9 d-flex flex-row">
-                    <img style={{ height: '40px', marginRight: '15px' }} src={paidTo} alt="twitter-ico" />
-                    <p>Paid to <br />London Business School</p>
+            </Link>
+            <Link style={{ color: 'black' }} className="nav-links" to="/pgtnx">
+                <div onClick={divclicked} className="row py-2 hov ">
+                    <div className="col-2">
+                        <p>5 April, 22</p>
+                    </div>
+                    <div className="col-9 d-flex flex-row">
+                        <img style={{ height: '40px', marginRight: '15px' }} src={paidTo} alt="twitter-ico" />
+                        <p>Paid to <br />London Business School</p>
+                    </div>
+                    <div className="col-1">
+                        <p style={{ marginBottom: '0px' }}>&#x20B9;1410500</p>
+                        <p className="txt-bold">&#x20A4;14000</p>
+                    </div>
                 </div>
-                <div className="col-1">
-                    <p style={{ marginBottom: '0px' }}>&#x20B9;1410500</p>
-                    <p className="txt-bold">&#x20A4;14000</p>
+            </Link>
+            <Link style={{ color: 'black' }} className="nav-links" to="/pgtnx">
+                <div onClick={divclicked} className="row py-2 hov ">
+                    <div className="col-2">
+                        <p>5 April, 22</p>
+                    </div>
+                    <div className="col-9 d-flex flex-row">
+                        <img style={{ height: '40px', marginRight: '15px' }} src={paidTo} alt="twitter-ico" />
+                        <p>Paid to <br />London Business School</p>
+                    </div>
+                    <div className="col-1">
+                        <p style={{ marginBottom: '0px' }}>&#x20B9;1410500</p>
+                        <p className="txt-bold">&#x20A4;14000</p>
+                    </div>
                 </div>
-            </div>
-            <div className="row mb-2">
-                <div className="col-2">
-                    <p>5 April, 22</p>
-                </div>
-                <div className="col-9 d-flex flex-row">
-                    <img style={{ height: '40px', marginRight: '15px' }} src={paidTo} alt="twitter-ico" />
-                    <p>Paid to <br />London Business School</p>
-                </div>
-                <div className="col-1">
-                    <p style={{ marginBottom: '0px' }}>&#x20B9;1410500</p>
-                    <p className="txt-bold">&#x20A4;14000</p>
-                </div>
-            </div>
-            <div className="row mb-2">
-                <div className="col-2">
-                    <p>5 April, 22</p>
-                </div>
-                <div className="col-9 d-flex flex-row">
-                    <img style={{ height: '40px', marginRight: '15px' }} src={paidTo} alt="twitter-ico" />
-                    <p>Paid to <br />London Business School</p>
-                </div>
-                <div className="col-1">
-                    <p style={{ marginBottom: '0px' }}>&#x20B9;1410500</p>
-                    <p className="txt-bold">&#x20A4;14000</p>
-                </div>
-            </div>
+            </Link>
         </div>
         <div className="mgb-50"></div>
         <br />
