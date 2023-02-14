@@ -12,7 +12,7 @@ function ServiceCard(props) {
   }
   return (
     <>
-      <Card style={{ width: '36rem' }}>
+      <Card className="hov" style={{ width: '36rem' }}>
         <Card.Body>
             <div onClick={methodCallout} style={{ cursor: 'pointer' }} className="row">
                 <div className="col-2">
