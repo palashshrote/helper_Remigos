@@ -1,21 +1,21 @@
 .footer-wrapper {
-    height: 85px;
-    border-top: 1px solid #ccc;
+    height: 5.313rem;
+    border-top: 0.063rem solid #ccc;
     .page-link-text {
         ul {
-            margin-bottom: 0px;
-            @media screen and (max-width: 576px) {
+            margin-bottom: 0rem;
+            @media screen and (max-width: 36rem) {
                 justify-content: center;
-                padding-left: 0px;
+                padding-left: 0rem;
                 display: flex;
             }
             li {
                 list-style: none;
                 display: inline;
-                border-right: 1px solid #BDBDBD;
-                padding: 0px 8px 0px 15px;
+                border-right: 0.063rem solid #BDBDBD;
+                padding: 0rem 0.5rem 0rem 0.938rem;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 1rem;
                 a {
                     color: #2a2a2a;
                     text-decoration: none;
@@ -31,28 +31,28 @@
    
     p {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1rem;
     }
     .social-links {
         ul {
-            margin-bottom: 0px;
+            margin-bottom: 0rem;
             display: flex;
             align-items: center;
             justify-content: flex-end;
 
-            @media screen and (max-width: 576px) {
+            @media screen and (max-width: 36rem) {
                 justify-content: center;
-                padding-left: 0px;
+                padding-left: 0rem;
             }
             li {
                 list-style: none;
                 display: inline-block;
-                margin-left: 12px;
+                margin-left: 0.75rem;
                 a {
                     background: #81E4C4;
                     border-radius: 50%;
-                    width: 32px;
-                    height: 33px;
+                    width: 2rem;
+                    height: 2.063rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;

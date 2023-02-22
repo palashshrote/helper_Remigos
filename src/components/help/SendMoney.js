@@ -4,16 +4,20 @@ import Footer from '../footer/footer';
 import HomeNavbar from '../header/HomeNavbar';
 import BreadcrumbExample from './BreadcrumbExample';
 import RelatedArticles from './RelatedArticles';
+import thumbup from '../../Assets/Images/thumbup.svg';
+import thumbdown from '../../Assets/Images/thumbdown.svg';
+import BreadC2 from './BreadC2';
 
 function SendMoney() {
   return (
     <>
       <HomeNavbar />
-      <div className="container">
-        <BreadcrumbExample tag1="Help" tag2="Sending Money" tag3="How do I snd money"/>
+      <div className="container mt50">
+        {/* <BreadcrumbExample tag1="Help" tag2="Sending Money" tag3="How do I send money"/> */}
+        <BreadC2 route2="/sendingMoney" tag1="Help" tag2="Sending Money" tag3="How do I send money"/>
         <br /><br />
         <div>
-          <h2 className="txt-bold">How do I send money?</h2>
+          <h2 className="txt700">How do I send money?</h2>
           <ol style={{ paddingLeft: '15px' }}>
               <li className="txt-bold">Sign Up</li>
               <p>We’ll ask for your email address, and you’ll create a password. You can also sign up by connecting to your Google or Facebook account. 
@@ -48,10 +52,10 @@ function SendMoney() {
               <p>After we’ve received your money, we’ll confirm the transfer via email, or in the app. And we’ll also let you and your recipient know when the money’s on its way.</p>
           </ol>
           <br />
-          <h5 className="txt-bold">Still not resolved? You can email us</h5>
+          <h5 className="txt700">Still not resolved? You can email us</h5>
           <br />
-          <Link className="nav-links" to="/pgemail">
-            <button style={{ padding: '6px 70px' }} className="btn btn-outline-success borderRad-20 txt-bold">EmailUs</button>
+          <Link className="nav-links" to="/emailUs">
+            <button className="modi5btnlight">EMAIL US</button>
           </Link>
           <br />
           <br />
@@ -61,9 +65,15 @@ function SendMoney() {
           <br />
           <h5>Was this article helpful?</h5>
           <div className="d-flex flex-row mb-1">
-              <button style={{ padding: '6px 40px' }} className="btn btn-success borderRad-20 txt-bold">YES</button>
+              <button className="modi5btn">
+                <img src={thumbup} alt="..."/ >
+                YES
+              </button>
               <div style={{ margin: '0px 10px' }} ></div>
-              <button style={{ padding: '6px 40px' }} className="btn btn-success borderRad-20 txt-bold">NO</button>
+              <button className="modi5btn">
+                <img src={thumbdown} alt="..." />
+                NO
+              </button>
           </div>
           <br />
         </div>

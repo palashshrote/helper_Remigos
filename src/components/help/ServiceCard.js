@@ -7,12 +7,12 @@ function ServiceCard(props) {
   function methodCallout(){
     console.log(props.title);
     <li>
-      <Link className="nav-links" to="/sndmoney">Send money</Link>
+      <Link className="nav-links" to="/howISendMoney">Send money</Link>
     </li>
   }
   return (
     <>
-      <Card className="hov" style={{ width: '36rem' }}>
+      <Card className="hov">
         <Card.Body>
             <div onClick={methodCallout} style={{ cursor: 'pointer' }} className="row">
                 <div className="col-2">
