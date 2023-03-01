@@ -6,13 +6,13 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Navheader from './components/header/Navheader';
+// import Navheader from './components/header/Navheader';
 import PageTnx from './components/help/PageTnx';
 import PageEmail from './components/help/PageEmail';
 import SendMoney from './components/help/SendMoney';
 import SendingMoney from './components/help/SendingMoney';
 import HomePage from './components/help/HomePage';
-import HomeNavbar from './components/header/HomeNavbar';
+// import HomeNavbar from './components/header/HomeNavbar';
 
 const router = createBrowserRouter([
   {
@@ -28,19 +28,19 @@ const router = createBrowserRouter([
     element: <div>Hello Palash</div>
   },
   {
-    path: "/sndingmoney",
+    path: "/sendingMoney",
     element: <SendingMoney />
   },
   {
-    path: "/sndmoney",
+    path: "/howISendMoney",
     element: <SendMoney />
   },
   {
-    path: "/pgtnx",
+    path: "/transactionPage",
     element: <PageTnx />
   },
   {
-    path: "/pgemail",
+    path: "/emailUs",
     element: <PageEmail />
   },
   {

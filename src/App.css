@@ -1,48 +1,13 @@
-/*.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/
 
 .logo-img {
-  width: 150px;
+  width: 9.375rem;
 }
 
 .txt-bold {
-  font-weight: bold;
+  font-weight: 600;
+}
+.txt700 {
+  font-weight: 700;
 }
 
 .nav-links {
@@ -51,11 +16,11 @@
 }
 
 .mgb-50 {
-  margin-bottom: 75px;
+  margin-bottom: 4.688rem;
 }
 
 .borderRad-20 {
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 .btnClr {
@@ -68,35 +33,197 @@
 }
 
 .paddingL0 {
-  padding-left: 0px;
+  padding-left: 0rem;
 }
 
 .modi5btn {
   background: #81E4C4;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   padding-left: 2rem;
   padding-right: 2rem;
   border: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 600;
-  font-size: 24px;
-  text-decoration: none;
-  line-height: 22px;
+  font-size: 1.375rem;
+  /* text-decoration: none; */
+  line-height: 1.25rem;
+}
+
+.modi5btnlight {
+  background: white;
+  border-radius: 3.125rem;
+  border-style: solid;
+  border-width: 0.063rem;
+  border-color: #81E4C4;
+  color: #45c29a;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.25rem;
 }
 /* import search from '../../Assets/Images/search.svg'; */
 input#search {
   background-image: url(../src/Assets/Images/search.svg);
   background-repeat: no-repeat;
-  text-indent: 20px;
+  text-indent: 1.25rem;
 }
 
 .hov:hover {
   /* font-weight: bold; */
   border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  border-width: 0.063rem;
+  border-radius: 0.313rem;
   border-color: #81E4C4;
-  box-shadow: 0px 2px 1px #81E4C4;
+  box-shadow: 0rem 0.125rem 0.063rem #81E4C4;
   cursor: pointer;
+}
+
+.bordernone {
+  border-width: 0;
+}
+
+.borderNLR {
+  border-left-width: 0.rem;
+  border-right-width: 0.rem;
+}
+
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1rem;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 0.5rem;
+  color: #81E4C4;
+  content: ">\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #45c29a;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  cursor: pointer;
+}
+.tnx-page {
+  margin: 100px 250px;
+  /* background: black; */
+}
+.tnx-page2 {
+  margin: 40px 175px;
+  /* background: black; */
+}
+
+.srch-bar {
+  width: 50rem;
+}
+
+
+@media only screen and (max-width:992px) {
+  textarea {
+      width: 100%;
+    }
+  .tnx-page {
+    margin: 80px 20px;
+    /* background: black; */
+  }
+  .srch-bar {
+    width: 43.5rem;
+  }
+}
+@media only screen and (max-width:768px) {
+  textarea {
+     
+      width: 100%;
+    }
+  .srch-bar {
+    width: 32.3rem;
+  }
+  .tnx-page {
+    margin: 40px 20px;
+    /* background: black; */
+  }
+  .col_br {
+    margin-top: 20px;
+  }
+  .modi5btn {
+    background: #81E4C4;
+    border-radius: 3.125rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.0rem;
+    line-height: 0.25rem;
+  }
+    .modi5btnlight {
+      background: white;
+      border-radius: 3.125rem;
+      border-style: solid;
+      border-width: 0.063rem;
+      border-color: #81E4C4;
+      color: #45c29a;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.0rem;
+      line-height: 0.25rem;
+    }
+}
+@media only screen and (max-width:454px) {
+  textarea {
+     
+      width: 100%;
+    }
+  .srch-bar {
+    width: 26rem;
+  }
+  .tnx-page {
+    margin: 40px 20px;
+    /* background: black; */
+  }
+  .col_br {
+    margin-top: 20px;
+  }
+  .modi5btn {
+    background: #81E4C4;
+    border-radius: 3.125rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.0rem;
+    line-height: 0.25rem;
+  }
+  .modi5btnlight {
+    background: white;
+    border-radius: 3.125rem;
+    border-style: solid;
+    border-width: 0.063rem;
+    border-color: #81E4C4;
+    color: #45c29a;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.0rem;
+    line-height: 0.25rem;
+  }
 }

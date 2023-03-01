@@ -8,7 +8,7 @@ function Footer() {
   return (
     <>
       <div className="container-fluid footer-wrapper h-100">
-        <div className="row h-100 align-items-center py-4">
+        <div style={{ marginLeft: '80px', marginRight: '80px' }} className="row h-100 align-items-center py-4">
           <div className="col-12 col-sm-4 page-link-text">
             <ul className="ps-0">
               <li>
@@ -41,7 +41,7 @@ function Footer() {
             </ul>
           </div>
           <div className="col-12 col-sm-4 text-center py-4">
-            <p className="mb-0"> Copyright © 2022 Remigos.com </p>
+            <p className="mb-0"> Copyright © 2023 Remigos.com </p>
           </div>
           <div className="col-12 col-sm-4 text-center text-sm-end social-links">
             <ul>

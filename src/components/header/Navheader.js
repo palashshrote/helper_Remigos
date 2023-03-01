@@ -25,16 +25,16 @@ const Navheader = () => {
               <Link to="/homepage">Home page</Link>
             </li>
             <li>
-              <Link to="/sndingmoney">Sending money</Link>
+              <Link to="/sendingMoney">Sending money</Link>
             </li>
             <li>
-              <Link to="/sndmoney">Send money</Link>
+              <Link to="/howISendMoney">Send money</Link>
             </li>
             <li>
-              <Link to="/pgemail">help-page-email</Link>
+              <Link to="/emailUs">help-page-email</Link>
             </li>
             <li>
-              <Link to="/pgtnx">help-page-tnx</Link>
+              <Link to="/transactionPage">help-page-tnx</Link>
             </li>
           </ul>
         </Stack>
